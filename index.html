@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Calculator</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="calculator-container">
+        <h2>Age Calculator Using Bootstrap</h2>
+        <form id="ageCalculatorForm">
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" class="form-control" id="dob" required>
+            </div>
+            <div class="text-center ">
+            <button type="button" class="btn btn-primary btn-lg"   id="calculate" onclick="calculateAge()">Calculate Age</button>
+            <button type="button" class="btn btn-primary btn-lg"  id="reset" onclick="reset()">Reset</button>
+        </div>
+        </form>
+        <div id="result" class="text-center">Result : </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- <script>
+    
+
+    function calculateAge() {
+        var dob = document.getElementById("dob").value;
+        var dobDate = new Date(dob);
+        var currentDate = new Date();
+
+        var age = currentDate.getFullYear() - dobDate.getFullYear();
+
+        if (currentDate.getMonth() < dobDate.getMonth() || (currentDate.getMonth() === dobDate.getMonth() && currentDate.getDate() < dobDate.getDate())) {
+            age--;
+        }
+
+        document.getElementById("result").innerText = "Your age is: " + age + " years.";
+    }
+
+    function reset(){
+        document.getElementById("result").innerText = "";
+    }
+</script>  -->
+
+</body>
+</html>
+        
